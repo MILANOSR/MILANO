@@ -983,7 +983,7 @@ send(msg.chat_id_, msg.id_,' *⌯︙اصدار سورس ميلانو* \n*⌯︙�
 end
 if text == 'قناه تحديثات البوت ⌯' and DevMILANOW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌯︙[تحديثات البوت](t.me/MILANOTEAM) \n⌯︙[قناه السورس](t.me/MliNTM)')
+send(msg.chat_id_, msg.id_,' ⌯︙[تحديثات البوت](t.me/D9DD7) \n⌯︙[قناه السورس](t.me/MliNTM)')
 end
 if text == "ضع اسم للبوت ⌯" and DevMILANOW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 

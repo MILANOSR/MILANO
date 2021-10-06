@@ -523,7 +523,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"@VVVZVV")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"@NNLNNN")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -726,7 +726,7 @@ end
 return false
 end
 if DevMILANOW(msg) then
-local bl = ' *⌯︙اهلا عزيزي آلمـطـور*\n*⌯︙آنت آلمـطـور آلآسـآسـي للبوت*\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n*⌯︙تسـتطـيع‌‏ آلتحگم باوامر البوت*\n*⌯︙من خلاال الكيبورت خاص بك*\n*⌯︙قناة سورس البوت *[اضغط هنا](t.me/NNUNN2)'
+local bl = ' *⌯︙اهلا عزيزي آلمـطـور*\n*⌯︙آنت آلمـطـور آلآسـآسـي للبوت*\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n*⌯︙تسـتطـيع‌‏ آلتحگم باوامر البوت*\n*⌯︙من خلاال الكيبورت خاص بك*\n*⌯︙قناة سورس البوت *[اضغط هنا](t.me/TRR8T)'
 local keyboard = {
 {'الاحصائيات ⌯','قناه تحديثات البوت ⌯'},
 {'تعطيل التواصل ⌯','تفعيل التواصل ⌯'},
@@ -757,7 +757,7 @@ if start then
 SourceMILANOr = start
 else
 Namot = (database:get(bot_id..'Name:Bot') or 'ميلانو')
-SourceMILANOr = '*⌯︙اهلا عزيزي*\n*⌯︙انا بوت اسمي '..Namot..'*\n*⌯︙اختصاصي حمايه الكروبات*\n*⌯︙من تكرار والسبام والتوجيه والخ…*\n*⌯︙لتفعيلي اتبع الاخطوات…↓*\n*⌯︙اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط*\n⌯︙[قناة سورس البوت](http://t.me/NNUNN2)'
+SourceMILANOr = '*⌯︙اهلا عزيزي*\n*⌯︙انا بوت اسمي '..Namot..'*\n*⌯︙اختصاصي حمايه الكروبات*\n*⌯︙من تكرار والسبام والتوجيه والخ…*\n*⌯︙لتفعيلي اتبع الاخطوات…↓*\n*⌯︙اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط*\n⌯︙[قناة سورس البوت](http://t.me/TRR8T)'
 end
 send(msg.chat_id_, msg.id_, SourceMILANOr) 
 end
@@ -983,7 +983,7 @@ send(msg.chat_id_, msg.id_,' *⌯︙اصدار سورس ميلانو* \n*⌯︙�
 end
 if text == 'قناه تحديثات البوت ⌯' and DevMILANOW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌯︙[تحديثات البوت](t.me/TLETHONARB) \n⌯︙[قناه السورس](t.me/NNUNN2)')
+send(msg.chat_id_, msg.id_,' ⌯︙[تحديثات البوت](t.me/TLETHONARB) \n⌯︙[قناه السورس](t.me/TRR8T)')
 end
 if text == "ضع اسم للبوت ⌯" and DevMILANOW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -1548,7 +1548,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 if data.username_ ~= false then
 send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](T.ME/"..data.username_..")}\n⌯︙["..MILANO_Msg.."] \n")
 else
-send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](T.ME/NNUNN2)}\n⌯︙["..MILANO_Msg.."] \n")
+send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](t.me/TRR8T)}\n⌯︙["..MILANO_Msg.."] \n")
 end
 end,nil)   
 DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
@@ -2004,7 +2004,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0, " *⌯︙عذرا »* {[@"..data.username_.."]}\n*⌯︙عذرا تم منع الملصق* \n" ) 
 else
-send(msg.chat_id_,0, " *⌯︙عذرا »* {["..data.first_name_.."](T.ME/NNUNN2)}\n*⌯︙عذرا تم منع الملصق* \n" ) 
+send(msg.chat_id_,0, " *⌯︙عذرا »* {["..data.first_name_.."](t.me/TRR8T)}\n*⌯︙عذرا تم منع الملصق* \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
@@ -2024,7 +2024,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," ⌯︙عذرا » {[@"..data.username_.."]}\n ⌯︙عذرا تم منع الصوره \n" ) 
 else
-send(msg.chat_id_,0," ⌯︙عذرا » {["..data.first_name_.."](T.ME/NNUNN2)}\n ⌯︙عذرا تم منع الصوره \n") 
+send(msg.chat_id_,0," ⌯︙عذرا » {["..data.first_name_.."](t.me/TRR8T)}\n ⌯︙عذرا تم منع الصوره \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
@@ -2041,7 +2041,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," *⌯︙عذرا »* {[@"..data.username_.."]}\n*⌯︙عذرا تم منع المتحركه* \n") 
 else
-send(msg.chat_id_,0," *⌯︙عذرا »* {["..data.first_name_.."](T.ME/NNUNN2)}\n*⌯︙عذرا تم منع المتحركه* \n" ) 
+send(msg.chat_id_,0," *⌯︙عذرا »* {["..data.first_name_.."](t.me/TRR8T)}\n*⌯︙عذرا تم منع المتحركه* \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
@@ -2336,7 +2336,7 @@ send(msg.chat_id_, msg.id_, '*⌯︙تم تعطيل الاسماء المكتو�
 database:set(bot_id.."block:name:stats"..msg.chat_id_,"close")
 end
 if not Manager(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
-function VVVZVV_name(t1,t2)
+function NNLNNN_name(t1,t2)
 if t2.id_ then 
 name_MILANO = ((t2.first_name_ or "") .. (t2.last_name_ or ""))
 if name_MILANO then 
@@ -2351,7 +2351,7 @@ end
 end
 end
 end
-bnnaGet(msg.sender_user_id_, VVVZVV_name)
+bnnaGet(msg.sender_user_id_, NNLNNN_name)
 end
 if database:get(bot_id.."kt:twh:stats"..msg.chat_id_) == "open" then
 if text and text:match("^وضع توحيد (.*)$") and Manager(msg) and database:get(bot_id.."kt:twh:stats"..msg.chat_id_) == "open" then
@@ -2612,7 +2612,7 @@ if text == "ترتيب الاوامر" and Constructor(msg) then
  database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
  database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
  database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ت")
- send(msg.chat_id_, msg.id_,"*⇇◍⇉تم ترتيب الاوامر بالشكل التالي*\n*⇇◍⇉ايدي - ا .*\n*⇇◍⇉مميز - م .\n⇇◍⇉ادمن - اد .*\n*⇇◍⇉مدير - مد . \n⇇◍⇉منشى - من .*\n*⇇◍⇉المنشئ الاساسي - اس .*\n*⇇◍⇉تعطيل الايدي بالصوره - تعط .*\n*⇇◍⇉تفعيل الايدي بالصوره - تفع .*\n*⇇◍⇉تنزيل الكل - تك .*\n*⇇◍⇉اضف رد - رد .*\n*⇇◍⇉حذف رد - حذ .*\n*⇇◍⇉تثبيت - ت .*")
+ send(msg.chat_id_, msg.id_,"*⤂✹تم ترتيب الاوامر بالشكل التالي*\n*⤂✹ايدي - ا .*\n*⤂✹مميز - م .\n⤂✹ادمن - اد .*\n*⤂✹مدير - مد . \n⤂✹منشى - من .*\n*⤂✹المنشئ الاساسي - اس .*\n*⤂✹تعطيل الايدي بالصوره - تعط .*\n*⤂✹تفعيل الايدي بالصوره - تفع .*\n*⤂✹تنزيل الكل - تك .*\n*⤂✹اضف رد - رد .*\n*⤂✹حذف رد - حذ .*\n*⤂✹تثبيت - ت .*")
  end
 if text == 'اضف امر' and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -3773,11 +3773,11 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == "تاك للمشرفين" and CoSu(msg) then
-if database:get(bot_id.."VVVZVV:admin:Time"..msg.chat_id_) then 
+if database:get(bot_id.."NNLNNN:admin:Time"..msg.chat_id_) then 
 return
 send(msg.chat_id_, msg.id_,"انتظر دقيقه من فضلك")
 end
-database:setex(bot_id..'VVVZVV:admin:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'NNLNNN:admin:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 m = 0
 tgad = 0
@@ -3821,7 +3821,7 @@ local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
 local TextS = "\n *⌯︙اهلا بك في متجر ملفات ميلانو*\n*⌯︙ملفات السورس ↓*\n*•━━━━━━ 𝑴𝑰 ━━━━━━━•*\n\n"
-local TextE = "\n*•━━━━━━ 𝑴𝑰 ━━━━━━━•*\n *⌯︙علامة تعني { ✓ } ملف مفعل*\n *⌯︙علامة تعني { ✘ } ملف معطل*\n *⌯︙قناة سورس ميلانو ↓*\n".." *⌯︙*[اضغط هنا لدخول](t.me/NNUNN2) \n"
+local TextE = "\n*•━━━━━━ 𝑴𝑰 ━━━━━━━•*\n *⌯︙علامة تعني { ✓ } ملف مفعل*\n *⌯︙علامة تعني { ✘ } ملف معطل*\n *⌯︙قناة سورس ميلانو ↓*\n".." *⌯︙*[اضغط هنا لدخول](t.me/TRR8T) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -4227,7 +4227,7 @@ return false
 end
 if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Xn"..msg.chat_id_)=="del" then  
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://vvvzvv.ml/Imagelnfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
+st = https.request('https://NNLNNN.ml/Imagelnfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -4293,7 +4293,7 @@ end
 end
 if (msg.content_.photo_) and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Xn"..msg.chat_id_)=="del" then
 photo_id = msg.content_.photo_.sizes_[1].photo_.persistent_id_  
-Srrt = https.request('https://vvvzvv.ml/Imagelnfo.php?token='..token..'&url='..photo_id.."&type=photo")
+Srrt = https.request('https://NNLNNN.ml/Imagelnfo.php?token='..token..'&url='..photo_id.."&type=photo")
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -8703,7 +8703,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and text:match('^تنظيف (%d+)$') and Manager(msg) then
-if not database:get(bot_id..'VVVZVV:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_) then   
+if not database:get(bot_id..'NNLNNN:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_) then   
 local num = tonumber(text:match('^تنظيف (%d+)$')) 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -8724,10 +8724,10 @@ DeleteMessage(msg.chat_id_, {[0] = msgm})
 msgm = msgm - 1048576
 end
 send(msg.chat_id_,msg.id_,'*⌯︙تم حذف {'..num..'}*')  
-database:setex(bot_id..'VVVZVV:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'NNLNNN:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 end
 end
-if text == "امسح" and BasicConstructor(msg) then
+if text == "تنظيف الميديا" and BasicConstructor(msg) then
 msgm = {[0]=msg.id_}
 local Message = msg.id_
 for i=1,200 do
@@ -8746,6 +8746,34 @@ end
 DeleteMessage(msg.chat_id_,msgm2)
 end,nil)  
 send(msg.chat_id_, msg.id_,"*تم تنظيف الميديا ⌯*")
+end
+if text == ("امسح") and cleaner(msg) then  
+local list = database:smembers(bot_id.."S00F4:allM"..msg.chat_id_)
+for k,v in pairs(list) do
+local Message = v
+if Message then
+t = " ⌯︙ تم مسح "..k.." من الوسائط الموجوده"
+DeleteMessage(msg.chat_id_,{[0]=Message})
+database:del(bot_id.."S00F4:allM"..msg.chat_id_)
+end
+end
+if #list == 0 then
+t = " ⌯︙ لا يوجد ميديا في المجموعه"
+end
+send(msg.chat_id_, msg.id_, t)
+end
+if text == ("عدد الميديا") and cleaner(msg) then  
+local num = database:smembers(bot_id.."S00F4:allM"..msg.chat_id_)
+for k,v in pairs(num) do
+local numl = v
+if numl then
+l = " ⌯︙ عدد الميديا الموجود هو "..k
+end
+end
+if #num == 0 then
+l = " ⌯︙ لا يوجد ميديا في المجموعه"
+end
+send(msg.chat_id_, msg.id_, l)
 end
 if text == "تنظيف التعديل" and Manager(msg) then
 Msgs = {[0]=msg.id_}
@@ -10827,7 +10855,7 @@ Text = [[
 *⌯م9 ◂ اوامر مطور الاساسي* 
 *⌯م10 ◂ اوامر الاعضاء*
 ٴ*•━━━━━━ 𝑴𝑰 ━━━━━━━•*ٴ
-[𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴 ](t.me/NNUNN2) 
+[𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴 ](t.me/TRR8T) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10843,7 +10871,7 @@ database:set(bot_id.." amir:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." amir:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://vvvzvv.ml/amirZhfa/Teland.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://NNLNNN.ml/amirZhfa/Teland.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n*⌯︙قائمه الزخرفه* \nٴ⌯∫ٴ*•━━━━━━ 𝑴𝑰 ━━━━━━━•*ٴ⌯∫○ٴ \n"
 i = 0
@@ -10851,7 +10879,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ⌯∫ٴ*•━━━━━━ 𝑴𝑰 ━━━━━━━•*ٴ⌯∫○ٴ\n⌯︙[𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴](t.me/NNUNN2) ')
+send(msg.chat_id_, msg.id_, t..'ٴ⌯∫ٴ*•━━━━━━ 𝑴𝑰 ━━━━━━━•*ٴ⌯∫○ٴ\n⌯︙[𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴](t.me/TRR8T) ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '*⌯︙تم تعطيل الابراج*')
@@ -10863,7 +10891,7 @@ database:set(bot_id.." amir:brj_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^برج (.*)$") and database:get(bot_id.." amir:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://vvvzvv.ml/amirBrg/Teland.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://NNLNNN.ml/amirBrg/Teland.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 i = 0
 for k,v in pairs(br.ok) do
@@ -10886,7 +10914,7 @@ database:set(bot_id.." amir:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.." amir:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://vvvzvv.ml/amirOmr/Teland.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://NNLNNN.ml/amirOmr/Teland.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 i = 0
 for k,v in pairs(ag.ok) do
@@ -11407,7 +11435,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,
 if data.username_ ~= false then
 send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](T.ME/"..data.username_..")}\n⌯︙["..MILANOAbot.."] \n") 
 else
-send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](T.ME/NNUNN2)}\n⌯︙["..MILANOAbot.."] \n") 
+send(msg.chat_id_,0," *⌯︙العضو :* {["..data.first_name_.."](t.me/TRR8T)}\n⌯︙["..MILANOAbot.."] \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 

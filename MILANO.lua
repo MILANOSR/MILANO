@@ -9,7 +9,7 @@ database = redis.connect('127.0.0.1', 6379)
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,772538035,772538035}   
+sudo_users = {SUDO,772538035,1914327324}   
 print([[
 _____ _____ ___ _ ____  
 > CH › @NNUNN2
@@ -125,7 +125,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(772538035) then  
 var = true  
-elseif tonumber(user_id) == tonumber(772538035) then
+elseif tonumber(user_id) == tonumber(1914327324) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -157,8 +157,8 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(772538035) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(772538035) then
-var = 'مطور السورس²'
+elseif tonumber(user_id) == tonumber(1914327324) then
+var = 'Developer'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
@@ -2516,7 +2516,7 @@ Text = [[
     ┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ⌔︙[𝘮𝘪𝘭𝘢𝘯𝘰 𝘵𝘦𝘢𝘮](https://t.me/TRR8T)
     ┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-⌔︙[𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘮𝘪𝘭𝘢𝘯𝘰](https://t.me/TRR8T)
+⌔︙[𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘮𝘪𝘭𝘢𝘯𝘰](https://t.me/MiLaNoTam)
     ┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ⌔︙[𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳](https://t.me/NNLNNN)
     ┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -10869,20 +10869,15 @@ else
 database:set(bot_id.."AutoFile:Time",os.date("%x"))
 end
 end
-if text == "غنيلي" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
-data,res = https.request('https://vvvzvv.ml/amirVois/Teland.php')
-if res == 200 then
-audios = json:decode(data)
-if audios.Info == true then
-local Text ='*⌯︙تم اختيار المقطع الصوتي لك*'
-keyboard = {} 
+if text == "غنيلي" then 
+ban = math.random(3,42)
+local Text ='تم اختيار مقطع الصوتي لك' 
+keyboard = {}  
 keyboard.inline_keyboard = {
-{{text = '𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴.',url="t.me/TLETHONARB"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-end
+{{text = '𝑴𝑰𝑳𝑨𝑵𝑶 𝑻𝑬𝑨𝑴', url="t.me/TRR8T"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/LLLQLLLQ/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "شنو رئيك بهذا" or text == "شنو رئيك بهذ" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then

@@ -2515,14 +2515,14 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  *⌔︙عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*⌔︙اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  *✫∫ عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*✫∫ اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
-Text = "𝘸𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘴𝘰𝘶𝘳𝘤𝘦 𝘔𝘐𝘓𝘈𝘕𝘖\n\n[⌔︙  𝘮𝘪𝘭𝘢𝘯𝘰 𝘵𝘦𝘢𝘮](https://t.me/TRR8T)\n\n[⌔︙  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/EE28i)\n\n[⌔︙   𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘮𝘪𝘭𝘢𝘯𝘰T(https://t.me/MiLaNoTam)\n\n[⌔︙  𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳](http://t.me/NNLNNN)\n\n[⌔︙  ʙᴏᴛ 𝘮𝘪𝘭𝘢𝘯𝘰](https://t.me/SiTmelanobot)"
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ 𝘀ᴏᴜʀᴄʀ 𝗺𝗶𝗹𝗮𝗻𝗼\n\n[✫  𝗺𝗶𝗹𝗮𝗻𝗼 ᴄʜᴀɴɴᴇʟ](http://t.me/TRR8T)\n\n[✫  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/MiLaNoTam)\n\n[✫  𝗺𝗶𝗹𝗮𝗻𝗼 ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/NNLNNN)\n\n[✫  ʙᴏᴛ ᴍɪʟᴀɴᴏ](http://t.me/SiTmelanobot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌔︙ sᴏᴜʀᴄʀ  𝘔𝘐𝘓𝘈𝘕𝘖',url="t.me/TRR8T"}},
+{{text = '✫ 𝘀ᴏᴜʀᴄʀ 𝗺𝗶𝗹𝗮𝗻𝗼',url="t.me/TRR8T/80"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TRR8T&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
